@@ -18,7 +18,8 @@ jobs:
         pipenv sync --dev
     - name: Lint with flake8
       run: |
-        pipenv run flake8 . --max-line-lenght=120
+        pipenv run flake8 . 
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Codecov report
       env:
         CODECOV_TOKEN: 'db749fe9-30d2-44b4-bd61-6b00b3995b49'
