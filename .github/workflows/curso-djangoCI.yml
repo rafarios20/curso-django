@@ -24,9 +24,9 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: pytest
       run: |
-        pipenv run pytest
+        pipenv run pytest --cov=pypro
     - name: Codecov report
       env:
         CODECOV_TOKEN: 'db749fe9-30d2-44b4-bd61-6b00b3995b49'
       run: |
-        codecov
+        pipenv run codecov
