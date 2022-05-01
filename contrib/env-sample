@@ -1,1 +1,2 @@
-DEBUG = False
+DEBUG = True
+SECRET_KEY = 'django-insecure-lhi*heuz((dxt2z=d$7r8z^9og=!6iyik@qsy@ah$c!fu(yrw+'
