@@ -22,11 +22,11 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics 
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide 
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: pytest
+      run: |
+        pipenv run pytest
     - name: Codecov report
       env:
         CODECOV_TOKEN: 'db749fe9-30d2-44b4-bd61-6b00b3995b49'
       run: |
         codecov
-    - name: pytest
-      run: |
-        pipenv run pytest
