@@ -27,6 +27,6 @@ jobs:
         pipenv run pytest --cov=pypro
     - name: Codecov report
       env:
-        CODECOV_TOKEN: 'db749fe9-30d2-44b4-bd61-6b00b3995b49'
+        CODECOV_TOKEN: '55a921f0-b66b-4c9a-a3d9-aacc8b85eca9'
       run: |
         pipenv run codecov
