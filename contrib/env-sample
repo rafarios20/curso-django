@@ -1,5 +1,5 @@
 DEBUG = True
-SECRET_KEY = 'django-insecure-lhi*heuz((dxt2z=d$7r8z^9og=!6iyik@qsy@ah$c!fu(yrw+'
+SECRET_KEY = '55v(mgb&!_5%jk@4t&vuxzdb13cnwew7e19lz!3ul-yk6xy(0l'
 ALLOWED_HOSTS=localhost, 127.0.0.1
 DATABASE_URL=postgres://postgres:postgres@localhost:5432/testdb
 #Configurações do AWS
