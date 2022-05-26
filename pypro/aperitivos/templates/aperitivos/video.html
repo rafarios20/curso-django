@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="row">
         <div class="col-md-12">
-            <h1 class="mt-4 mb-3">{{ video.titulo }}</h1>
+            <h1 class="mt-4 mb-3">{{ video.titulo | default:"Faltando Título" }}</h1>
             <iframe src="https://player.vimeo.com/video/{{ video.vimeo_id}}?h=e310c49b45&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="800" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Python Birds 2022-03-23 11-36-14.mp4"></iframe>
 	    </div>
 	</div>
